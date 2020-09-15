@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modalWin {
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(168, 167, 167);
+    border-radius: 7px;
+    background: rgb(254, 251, 251);
+    background: radial-gradient(circle, rgb(229, 245, 253) 0%, rgb(103, 186, 231) 100%);
+    /*margin: 200px 70px 0 0;*/
+    margin: 200px 70px 0 0;
+
+    position: fixed;
+    user-select: none;
+    box-shadow: -5px -5px 8px 0 rgba(0, 0, 0, 0.75);
+    display: flex;
+    font-size: 18px;
+    font-family: sans-serif;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    height: 20px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(168, 167, 167);
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(119, 195, 245);
+    padding-top: 1px;
+    box-shadow: -1px -1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+*:focus {
+    outline: none;
+}
+.modalWin_cross {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 19px;
+    height: 19px;
+    margin: 0 7px 0 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 11px;
+}
+.modalWin_cross:hover {
+    box-shadow: 0 0 2px 2px rgb(248, 6, 6);
+    background-color: rgb(248, 6, 6);
+    padding-top: 2px;
+    font-size: 15px;
+}
+.modalWin_text {
+    margin: 10px 15px 0 0;
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+}
