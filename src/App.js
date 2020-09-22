@@ -1,20 +1,22 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Notification from "./Notification";
 
 
-const App = () => {
-
-    const text = 'Приветствую Вас! Нажмите на кнопку для выхода';
-
-    return (
-        <div>
-
-            <Notification text={text}/>
-
-        </div>
-    );
-}
-
+    class App extends Component {
+        constructor(props) {
+            super(props)
+            this.state = {
+       text:'Приветствую Вас! Нажмите на кнопку для выхода'
+            }
+        }
+        render() {
+            return (
+                <div>
+                    <Notification text={this.state.text}/>
+                </div>
+            );
+        }
+    }
 
 export default App;
