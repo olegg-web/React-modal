@@ -13,6 +13,7 @@
     background: radial-gradient(circle, rgb(229, 245, 253) 0%, rgb(103, 186, 231) 100%);
     margin: 200px 0 0 0;
     position: fixed;
+
     user-select: none;
     box-shadow: -5px -5px 8px 0 rgba(0, 0, 0, 0.75);
     display: flex;
@@ -73,4 +74,26 @@
     font-size: 18px;
     text-align: center;
     font-family: sans-serif;
+}
+.buttonClose {
+    height: 20px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(168, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.buttonClose:hover {
+    background-color: rgb(82, 195, 230);
+    padding-top: 3px;
+    box-shadow: -1px -1px 3px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    padding-bottom: 3px;
 }
